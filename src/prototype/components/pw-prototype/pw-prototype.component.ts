@@ -34,12 +34,21 @@ export class PwPrototypeComponent {
   };
   testImgs = [
     { id: '이미지 없음', value: '' },
-    { id: '640x360', value: 'assets/images/prototype/640x360.jpeg' },
-    { id: '500x200', value: 'assets/images/prototype/500x200.png' },
-    { id: '800x1037', value: 'assets/images/prototype/800x1037.jpeg' },
-    { id: '800x1731', value: 'assets/images/prototype/800x1731.jpeg' },
-    { id: '738x1608', value: 'assets/images/prototype/738x1608.png' },
-    { id: '910x3400', value: 'assets/images/prototype/910x3400.png' },
+    {
+      id: '640x360',
+      value:
+        'https://image.imnews.imbc.com/replay/2023/nwdesk/article/__icsFiles/afieldfile/2023/08/05/desk_20230805_201317_1_7_Large.jpg',
+    },
+    {
+      id: '500x200',
+      value:
+        'https://img9.yna.co.kr/etc/inner/KR/2022/05/11/AKR20220511003300072_01_i_P2.jpg',
+    },
+    {
+      id: '800x1731',
+      value:
+        'https://mblogthumb-phinf.pstatic.net/MjAxOTA3MjBfMjU4/MDAxNTYzNjAyMjY1MTM3.0fx5ORRlUPUQZSw1hTHAjtMh_U9tYLR_pYbkbxdu_4Eg.DzFeBSrL2m9m-ANpI7R4juTWA5nHTc324prWnJJKYwUg.JPEG.westar4501/%EC%96%B4%EC%A9%8C%EB%8B%A4_%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4_xr.jpg?type=w800',
+    },
   ];
   testRatios = [
     { id: '꽉차게', value: 'fit' },
