@@ -1,0 +1,32 @@
+<h1>{{ name }}</h1>
+<div
+  class="device"
+  [style.height.px]="resolution.height"
+  [style.width.px]="resolution.width"
+>
+  <div class="bg"></div>
+  <div class="header" [style.height.px]="headerHeight">헤더</div>
+  <div class="wrapper">
+    <!-- 80% auto vs auto 80% -->
+    <div
+      class="group_content"
+      [style.background-image]="'url(' + image + ')'"
+      [style.background-size]="ratio === 'fit' ? 'cover' : ratio"
+      [style.width.px]="bodySize.width"
+      [style.height.px]="bodySize.height"
+    >
+      <div class="content-wrap" [style.padding-top.px]="headerHeight">
+        <div class="overlay" [style.height.px]="overlayHeight">
+          <div
+            class="circle"
+            [style.top.px]="circlePosition.y"
+            [style.left.px]="circlePosition.x"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="group_social">
+      <button class="footer-btn" type="button">액션 버튼</button>
+    </div>
+  </div>
+</div>

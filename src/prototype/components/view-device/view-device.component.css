@@ -1,0 +1,67 @@
+.header,
+.footer-btn,
+.overlay {
+  opacity: 0.3;
+}
+
+.bg,
+.group_content,
+.footer-btn {
+  position: absolute;
+}
+
+.bg,
+.header,
+.footer-btn {
+  width: 100%;
+}
+
+.bg {
+  height: 100%;
+  background-color: blue;
+}
+
+.group_content {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px 20px 0% 0%;
+}
+
+.device,
+.circle {
+  position: relative;
+}
+
+.device {
+  margin-right: 50px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.header {
+  z-index: 99999;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background-color: red;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer-btn {
+  background-color: yellow;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+.overlay {
+  background-color: pink;
+  overflow: hidden;
+}

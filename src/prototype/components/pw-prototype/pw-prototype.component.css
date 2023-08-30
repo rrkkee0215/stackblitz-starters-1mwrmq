@@ -1,0 +1,25 @@
+#wrap {
+  padding: 20px;
+  display: flex;
+}
+
+input {
+  border: solid;
+}
+
+.dot,
+.bg,
+.ratio {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.image-btn-wrap {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.image-btn,
+.ratio-btn {
+  margin-left: 10px;
+}

@@ -1,0 +1,66 @@
+<div id="wrap">
+  <wf-view-device
+    name="SE (375x667)"
+    [resolution]="devices.se"
+    [coordinate]="coordinate"
+    [image]="image"
+    [ratio]="ratio"
+  ></wf-view-device>
+  <wf-view-device
+    name="MINI (375x812)"
+    [resolution]="devices.mini"
+    [coordinate]="coordinate"
+    [image]="image"
+    [ratio]="ratio"
+  ></wf-view-device>
+  <wf-view-device
+    name="ZFLIP (412x1004)"
+    [resolution]="devices.zFlip"
+    [coordinate]="coordinate"
+    [image]="image"
+    [ratio]="ratio"
+  ></wf-view-device>
+
+  <div class="ctl-wrap">
+    <h1>커스터마이징</h1>
+    <div class="dot">
+      <p>위치</p>
+      <label for="x">X 좌표</label>
+      <input name="x" type="number" [(ngModel)]="coordinate.x" />
+      <label for="y">Y 좌표</label>
+      <input name="y" type="number" [(ngModel)]="coordinate.y" />
+    </div>
+    <div class="bg">
+      <p>배경 선택</p>
+      <div
+        class="image-btn-wrap"
+        *ngFor="let testImg of testImgs; let i = index"
+      >
+        <label for="image-{{ i }}">{{ testImg.id }}</label>
+        <input
+          class="image-btn"
+          type="radio"
+          name="image-{{ i }}"
+          [value]="testImg.value"
+          [(ngModel)]="image"
+        />
+      </div>
+    </div>
+    <div class="ratio">
+      <p>비율 선택</p>
+      <div
+        class="ratio-btn-wrap"
+        *ngFor="let testRatio of testRatios; let i = index"
+      >
+        <label for="ratio-{{ i }}">{{ testRatio.id }}</label>
+        <input
+          class="ratio-btn"
+          type="radio"
+          name="ratio-{{ i }}"
+          [value]="testRatio.value"
+          [(ngModel)]="ratio"
+        />
+      </div>
+    </div>
+  </div>
+</div>
